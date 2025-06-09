@@ -16,6 +16,7 @@ export default {
         }
       });
     }
+    //route ke api kamar
 
     try {
       // GET /kamar - Ambil semua kamar
