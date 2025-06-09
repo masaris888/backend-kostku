@@ -17,6 +17,7 @@
     "observability": {
         "enabled": true
     },
+    //konfigurasi menyambungkan database ke d1 sqlite di cloudflare
     "d1_databases": [
         {
             "binding": "DB", // Nama binding yang digunakan di perintah
