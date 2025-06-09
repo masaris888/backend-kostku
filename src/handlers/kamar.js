@@ -4,7 +4,7 @@ const corsHeaders = {
 	"Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, OPTIONS",
 	"Access-Control-Allow-Headers": "Content-Type, Authorization"
   };
-//   membuat api untuk mengambil data semua kamar dari table kamar di database sqlite
+//   membuat function untuk mengambil data semua kamar dari table kamar di database sqlite
 export async function getAllKamar(env) {
 	try {
 	  const result = await env.DB.prepare("SELECT * FROM kamar").all();
@@ -19,6 +19,7 @@ export async function getAllKamar(env) {
   }
   //end getAllKamar
 
+// membuat function untuk menambahkan data kamar baru ke table kamar di database sqlite
   export async function createKamar(env, request) {
 	try {
 	  const body = await request.json();
@@ -51,6 +52,7 @@ export async function getAllKamar(env) {
 	  });
 	}
   }
+// end createKamar
 
   export async function updateKamar(env, request, id) {
 	try {
