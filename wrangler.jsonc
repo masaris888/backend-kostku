@@ -1,0 +1,28 @@
+/**
+ * For more details on how to configure Wrangler, refer to:
+ * https://developers.cloudflare.com/workers/wrangler/configuration/
+ */
+ {
+    "$schema": "node_modules/wrangler/config-schema.json",
+    "name": "kost-backend",
+    "main": "src/index.js",
+    "compatibility_date": "2025-05-07",
+    "compatibility_flags": [
+        "nodejs_compat"
+    ],
+    "assets": {
+        "binding": "ASSETS",
+        "directory": "./public"
+    },
+    "observability": {
+        "enabled": true
+    },
+    "d1_databases": [
+        {
+            "binding": "DB", // Nama binding yang digunakan di perintah
+            "database_name": "kost_db", // Nama database di Cloudflare
+            "database_id": "79bbb499-18e7-4ead-9aa7-3193fd4df095",
+            "migrations_dir": "migrations"
+        }
+    ]
+}

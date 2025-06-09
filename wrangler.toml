@@ -1,0 +1,11 @@
+name = "kost-backend"
+main = "src/index.js"
+compatibility_date = "2025-05-07"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "kost_db"
+database_id = "79bbb499-18e7-4ead-9aa7-3193fd4df095"
+
+[build]
+command = "npm install"

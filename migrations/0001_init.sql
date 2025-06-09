@@ -1,0 +1,8 @@
+-- Migration number: 0001 	 2025-05-07T05:35:50.749Z
+CREATE TABLE kamar (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  nama TEXT NOT NULL,
+  lokasi TEXT NOT NULL,
+  harga INTEGER NOT NULL
+);
+
