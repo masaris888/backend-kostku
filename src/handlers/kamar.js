@@ -88,8 +88,9 @@ export async function getAllKamar(env) {
   // end updateKamar
 
 
-
+// membuat function untuk menghapus data kamar berdasarkan id di table kamar di database sqlite
   export async function deleteKamar(env, id) {
+	//menggunakan try catch untuk menangani error
 	try {
 	  const stmt = env.DB.prepare("DELETE FROM kamar WHERE id = ?").bind(id);
 	  const result = await stmt.run();
@@ -107,6 +108,7 @@ export async function getAllKamar(env) {
 	  });
 	}
   }
+  // end deleteKamar
 
 
 
