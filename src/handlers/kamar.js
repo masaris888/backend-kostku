@@ -54,7 +54,9 @@ export async function getAllKamar(env) {
   }
 // end createKamar
 
+// membuat function untuk mengupdate data kamar berdasarkan id di table kamar di database sqlite
   export async function updateKamar(env, request, id) {
+	//menggunakan try catch untuk menangani error
 	try {
 	  const body = await request.json();
 	  const { nama, lokasi, harga } = body;
@@ -83,6 +85,7 @@ export async function getAllKamar(env) {
 	  });
 	}
   }
+  // end updateKamar
 
 
 
