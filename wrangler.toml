@@ -1,3 +1,4 @@
+//konfigurasi ke cloudflare
 name = "kost-backend"
 main = "src/index.js"
 compatibility_date = "2025-05-07"
@@ -5,7 +6,7 @@ compatibility_date = "2025-05-07"
 [[d1_databases]]
 binding = "DB"
 database_name = "kost_db"
-database_id = "79bbb499-18e7-4ead-9aa7-3193fd4df095"
+database_id = "9ff06c40-9e1a-4d3b-bc0d-25b47563384c"
 
 [build]
 command = "npm install"
